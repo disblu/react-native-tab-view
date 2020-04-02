@@ -452,11 +452,7 @@ export default class TabBar<T extends Route> extends React.Component<
                     },
                   };
 
-<<<<<<< HEAD
                   onTabPress && onTabPress(event);
-=======
-                  onTabPress ?.(event);
->>>>>>> 6b84811... add props to change active / inactive TabBarItem background color
 
                   if (event.defaultPrevented) {
                     return;
@@ -464,11 +460,7 @@ export default class TabBar<T extends Route> extends React.Component<
 
                   this.props.jumpTo(route.key);
                 }}
-<<<<<<< HEAD
                 onLongPress={() => onTabLongPress && onTabLongPress({ route })}
-=======
-                onLongPress={() => onTabLongPress ?.({ route })}
->>>>>>> 6b84811... add props to change active / inactive TabBarItem background color
                 labelStyle={labelStyle}
                 style={tabStyle}
               />
